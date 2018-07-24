@@ -1,0 +1,24 @@
+{
+  "name": "slackscheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel": "mkdir -p build && babel server.js -o build/main.bundle.js",
+    "lint": "eslint --fix *.js",
+    "start": "babel-node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^4.3.1",
+    "dialogflow": "^0.6.0",
+    "googleapis": "^27.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.2.0",
+    "eslint-config-google": "^0.9.1"
+  }
+}
