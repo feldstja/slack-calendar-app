@@ -21,9 +21,13 @@ var tokenMDBSchema = new Schema({
     type: String,
     required: true
   },
-  
+
   slackId:{
     type: String,
+    required: true
+  },
+  expiry: {
+    type: Number,
     required: true
   }
   //An array of the documents the user has access to
